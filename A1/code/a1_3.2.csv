@@ -1,0 +1,2 @@
+0.38124999999999998, 0.42762499999999998, 0.43149999999999999, 0.44562499999999999, 0.43924999999999997
+We can definitely see a trend that accuracy increases as number of elements in a training set increases, however slightly goes lower on last one. The reason why we achieve better accuracy with more data is because with more data we are able to achieve better generalization. However we can also observe for the largest data set that there is a diminishing value added at some point, so more data doesn't always mean better results in accuracy. 

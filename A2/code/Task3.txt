@@ -1,0 +1,22 @@
+The following are the results of perplexity for different language models
+as well as for different parameters of smoothing:
+
+English Language Model (No smoothing): 15.935131886800306
+English Language Model (delta = 0.0001) : 16.034518173214092
+English Language Model (delta = 0.001) : 16.589197462190373
+English Language Model (delta = 0.01) : 19.20388355785351
+English Language Model (delta = 0.1) : 29.0362539382018
+French Language Model (No smoothing): 16.106749477974745
+French Language Model (delta = 0.0001) : 16.2558923517905
+French Language Model (delta = 0.001) : 17.03362648429781
+French Language Model (delta = 0.01) : 20.44892984318918
+French Language Model (delta = 0.1) : 32.76860622465892
+
+We can clearly see that the value of perplexity is increasing with delta smoothing.
+The higher the delta parameter for smoothing, the larger the perplexity value
+for both the models. This means that the delta smoothing is making perplexity
+bigger, therefore making the language model to be harder to work with. Therefore,
+delta-smothing doesn't seem like the best measure for smoothing in terms of the
+calculated perplexity. The value of perplexity in general is not large, compared
+to the other perplexity values I encountered on internet, therefore in general
+the language model is good and able to produce results with high probability.

@@ -1,0 +1,54 @@
+Here I will generalize on the findings that I shared below the paragraphs. 
+
+In terms of number of sentences used to train AM. 
+The overal performance for all n values for BLEU score and number of 
+iterations would be optimal at 10k sentences.
+Below 10k, for 1k I observed that result was consistently lower. 
+Above 10k, I observed that the performance consistently remained the same.
+Therefore there is no need in terms of this model to run on 15k or 30k sentences.
+
+In terms of number of iterations for training AM.
+The optimal number of iterations I could observe to be 5.
+The overall performance suprisingly to me started to decrease as I started
+increasing number of iterations from 5 to 25 (with interval of 5) for all
+different values of n-grams for BLEU score and number of sentences for AM.
+After 15 iterations, the performance stopped decreasing and remained the same.
+
+In terms of different values of n for BLEU score. I could observe an obvious
+pattern that as we increase number of n-grams, the performance substantially 
+decreases for obvious reasons.
+
+Mean BLEU score for n = 1 (AM 5 iterations)(1k, 10k, 15k, 30k):
+0.4731625348393259, 0.4797230469763336, 0.4797230469763336, 0.4797230469763336
+Mean BLEU score for n = 2 (AM 5 iterations)(1k, 10k, 15k, 30k): 
+0.28744827920903426, 0.29176334394441755, 0.29176334394441755, 0.29176334394441755
+Mean BLEU score for n = 3 (AM 5 iterations)(1k, 10k, 15k, 30k):
+0.10458466621491361, 0.10657284803403838, 0.10657284803403838, 0.10657284803403838
+
+Mean BLEU score for n = 1 (AM 10 iterations)(1k, 10k, 15k, 30k):
+0.4527739551509181, 0.46433446728792577, 0.46433446728792577, 0.46433446728792577
+Mean BLEU score for n = 2 (AM 10 iterations)(1k, 10k, 15k, 30k): 
+0.27639512307879366, 0.2824300483317181, 0.2824300483317181, 0.2824300483317181
+Mean BLEU score for n = 3 (AM 10 iterations)(1k, 10k, 15k, 30k):
+0.09554598529404996, 0.09554598529404996, 0.09554598529404996, 0.09554598529404996
+
+Mean BLEU score for n = 1 (AM 15 iterations)(1k, 10k, 15k, 30k):
+0.4442408679273832, 0.4558013800643909, 0.4558013800643909, 0.4558013800643909
+Mean BLEU score for n = 2 (AM 15 iterations)(1k, 10k, 15k, 30k): 
+0.26870966108059113, 0.27479789563273, 0.27479789563273, 0.27479789563273
+Mean BLEU score for n = 3 (AM 15 iterations)(1k, 10k, 15k, 30k):
+0.09515013865642581, 0.09515013865642581, 0.09515013865642581, 0.09515013865642581
+
+Mean BLEU score for n = 1 (AM 20 iterations)(1k, 10k, 15k, 30k):
+0.4442408679273832, 0.4558013800643909, 0.4558013800643909, 0.4558013800643909
+Mean BLEU score for n = 2 (AM 20 iterations)(1k, 10k, 15k, 30k): 
+0.26870966108059113, 0.27479789563273, 0.27479789563273, 0.27479789563273
+Mean BLEU score for n = 3 (AM 20 iterations)(1k, 10k, 15k, 30k):
+0.09515013865642581, 0.09515013865642581, 0.09515013865642581, 0.09515013865642581
+
+Mean BLEU score for n = 1 (AM 25 iterations)(1k, 10k, 15k, 30k):
+0.4442408679273832, 0.4558013800643909, 0.4558013800643909, 0.4558013800643909
+Mean BLEU score for n = 2 (AM 25 iterations)(1k, 10k, 15k, 30k): 
+0.26870966108059113, 0.27479789563273, 0.27479789563273, 0.27479789563273
+Mean BLEU score for n = 3 (AM 25 iterations)(1k, 10k, 15k, 30k):
+0.09515013865642581, 0.09515013865642581, 0.09515013865642581, 0.09515013865642581
